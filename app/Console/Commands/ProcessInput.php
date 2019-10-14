@@ -40,7 +40,7 @@ class ProcessInput extends Command
 
         $content = "elapsed_time=0.0022132396697998047, type-CNC,radius-1-15,position-1=0.000000000000014,position-1//90,position-2=0%direction-1=-2.0816681711721685e-16";
         if($this->option('file')){
-
+            $content = file_get_contents($this->option('file'));
         }
         $unified = str_replace('%', ',', $content);
         $content_array = explode(",", $unified);
