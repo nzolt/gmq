@@ -29,6 +29,7 @@ or to load the string from file
 $ php artisan geomiq:process:input --file=/path/to/file.in
 
 # Because of the limited pattern in provided data the solution is not as generic as should be.
+[The Regex patter can be extended for "-1.0415681311891685e-16" format!]
 
 also because the time I had to spend is still missin the Unit-test and Integration (Behat) test.
  
